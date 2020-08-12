@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
 	<h2 class="d-inline-block my-3">Item List (Table)</h2>
-	<a href="{{route('items.create')}}" class="btn btn-success float-right my-3">Add Item</a>
+	<a href="{{route('brands.create')}}" class="btn btn-success float-right my-3">Add Item</a>
 	<table class="table table-bordered">
 		<thead>
 			<tr>
