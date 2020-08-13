@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container-fluid">
-	<h2 class="d-inline-block my-3">Brand List (Table)</h2>
+	<h2 class="d-inline-block my-3">Category List (Table)</h2>
 	<a href="{{route('categories.create')}}" class="btn btn-success float-right my-3">Add Brand</a>
 	<table class="table table-bordered">
 		<thead>

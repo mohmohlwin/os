@@ -74,7 +74,7 @@
  					<label>Description</label>
  					<textarea class="form-control" name="description"></textarea>
  				</div>
- 				<input type="submit" name="" value="+ Add" class="btn btn-outline-primary">
+ 				<input type="submit" name="" value="Create" class="btn btn-outline-primary">
  			</form>
  		</div>
  	</div>
