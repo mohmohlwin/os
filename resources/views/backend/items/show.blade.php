@@ -14,6 +14,8 @@
  			</span></h5>
  			
  			<h5 class="text-dark pt-2 mt-3">Description:{{$item->description}} <span class="text-muted"></span></h5>
+ 			<h5 class="text-dark pt-2 mt-3">Brand:{{$item->brand->name}} <span class="text-muted"></span></h5>
+ 			<h5 class="text-dark pt-2 mt-3">Subcategory:{{$item->subcategory->name}} <span class="text-muted"></span></h5>
  		</div>
  	</div>
 </div>

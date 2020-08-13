@@ -63,6 +63,9 @@
 					</div>
 				</div>
 			</div>
+			<div class="modal-footer">
+				<button class="btn btn-outline-secondary" id="close" data-dismiss="modal">X</button>
+			</div>
 		</div>
 	</div>
 </div>

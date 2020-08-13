@@ -12,8 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/','FrontendController@home')->name('homepage');
+Route::get('filteritem','FrontendController@items')->name('itempage');
+Route::get('detail/{id}','FrontendController@detail')->name('detailpage');
+Route::get('register','FrontendController@register')->name('registerpage');
+Route::get('login','FrontendController@login')->name('loginpage');
+Route::get('checkout','FrontendController@checkout')->name('checkoutpage');
+Route::get('profile','FrontendController@profile')->name('profilepage');
 
-Route::get('/','BackendController@dashboard')->name('dashboard'); 
+
+
+Route::get('dashboard','BackendController@dashboard')->name('dashboard'); 
     // return view('welcome');
     // return 'Hello Laravel';
 Route::resource('items','ItemController');

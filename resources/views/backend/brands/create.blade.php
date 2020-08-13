@@ -13,24 +13,24 @@
 	</div>
 	@endif
 
-<div class="row">
- 		<div class="offset-md-2  col-md-8">
- 			<form method="POST" action="{{route('brands.store')}}" enctype="multipart/form-data">
- 				@csrf
- 				<div class="form-group">
- 					<label>Name</label>
- 					<input type="text" name="name" class="form-control">
- 				</div>
+	<div class="row">
+		<div class="offset-md-2  col-md-8">
+			<form method="POST" action="{{route('brands.store')}}" enctype="multipart/form-data">
+				@csrf
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" name="name" class="form-control">
+				</div>
 
- 				<div class="form-group">
- 					<label>Photo</label>
- 					<input type="file" name="photo" class="form-control-file">
- 				</div>
- 				
- 				<input type="submit" name="" value="+ Add" class="btn btn-outline-primary">
- 			</form>
- 		</div>
- 	</div>
+				<div class="form-group">
+					<label>Photo</label>
+					<input type="file" name="photo" class="form-control-file">
+				</div>
+				
+				<input type="submit" name="" value="Create" class="btn btn-outline-primary">
+			</form>
+		</div>
+	</div>
 
 </div>
 
