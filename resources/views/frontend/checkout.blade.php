@@ -1,46 +1,46 @@
 @extends('frontendtemplate')
 
 @section('content')
-	<div class="col-lg-9">
-		<h2>Checkout Page</h2>
-		<div id="checkout_body">
-			<div class="container my-3 text-center">
-				<div class="row">
-					<div class="offset-md-2 col-md-8">
-						<h3 class="py-3">Check Out</h3>
-						<div class="table-responsive">
-							<table class="table">
-								<thead>
-									<tr>
-										<th>No.</th>
-										<th>Item Name</th>
-										<th>Price</th>
-										<th>Qty</th>
-										<th>Sub Total</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>1</td>
-										<td>Item One</td>
-										<td>50000 MMK</td>
-										<td>2</td>
-										<td>100000 MMK</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Item Two</td>
-										<td>40000 MMK</td>
-										<td>2</td>
-										<td>80000 MMK</td>
-									</tr>
+<div class="col-lg-9">
 
-								</tbody>
-							</table>
-						</div>
-					</div>
+	<div id="checkout_body">
+		<div class="container my-5 text-center">
+		<div class="row">
+			<div class="offset-md-2 col-md-8">
+				<h3 class="py-3 text-center">Your Cart</h3>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>No.</th>
+							<th>Photo</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Qty</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+
+
+					</tbody>
+
+				</table>
+				<div>
+					<a href="{{route('homepage')}}" class="btn btn-success">Continue Shopping</a>
+					<textarea class="notes" placeholder="Your note here!"></textarea>
+					@auth
+					<a href="#" class="btn btn-primary float-right buy_now">Checkout</a>
+					@else
+					<a href="{{route('login')}}" class="btn btn-primary float-right">Login To Checkout</a>
+					@endauth
 				</div>
 			</div>
 		</div>
+		</div>
 	</div>
-@endsection
+</div>
+	@section('script')
+	<script type="text/javascript" src="{{asset('frontend/js/script.js')}}">
+
+	</script>
+	@endsection
