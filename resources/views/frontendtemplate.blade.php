@@ -49,9 +49,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('checkoutpage')}}" ><i class="fas fa-shopping-cart" id="item_count" ></i></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{route('profilepage')}}">Profile</a>
-          </li>
+          
           
           <!-- Authentication Links -->
           @guest
@@ -74,6 +72,8 @@
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               {{ __('Logout') }}
+            <a class="dropdown-item" href="{{route('profilepage')}}">Profile</a>
+              
             </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

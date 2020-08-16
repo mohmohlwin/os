@@ -19,11 +19,25 @@ Items Manage
 - List , Edit , Delete
 - Validaton Error, Delete Image
 
-UI
---
--filter item page
--item detail page
--checkout page
--profile page
--login register
+14-08-2020
+----------
+
+-filter item page (data binding)
+-profile page (link/ retrieve)
+-auth (multi role)
+
+Backend
+	-Order Retrieve
+	-(backend/orders)
+	-create view (index.blade.php)
+	-show table (order list)
+	-OrderController /index
+
+	-RUD (category, subcategory)
+
+
+
+
+
+
 
