@@ -30,7 +30,7 @@
 				<td>{{$order->total}}MMK</td>
 
 				<td>
-					{{-- <a href="{{route('orders.edit',$order->id)}}" class="btn btn-warning">Edit</a> --}}
+					<a href="{{route('orders.show',$order->id)}}" class="btn btn-warning">Detail</a>
 
 					<form method="post" action="{{route('orders.destroy',$order->id)}}" onsubmit="return confirm('Are you sure?')" class="d-inline-block">
 						@csrf

@@ -48,7 +48,14 @@ class OrderController extends Controller
         $cartArr=json_decode($request->shop_data); //arr
         $total =0;
         foreach ($cartArr as $row) {
+            if ($row->discount) {
+            $total+=($row->discount * $row->qty);
+                
+            }else{
             $total+=($row->price * $row->qty);
+                
+            }
+                
         }
         $order=new Order;
         $order->voucherno= uniqid();
@@ -74,7 +81,9 @@ class OrderController extends Controller
      */
     public function show($id)
     {
-        //
+        $order = Order::find($id);
+        return view('backend.orders.show',compact('order'));
+        
     }
 
     /**
