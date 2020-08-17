@@ -23,7 +23,6 @@ Route::get('profile','FrontendController@profile')->name('profilepage');
 // backend
 
 Route::middleware('role:admin')->group(function () {
-Route::resource('orders','OrderController');
 
 Route::get('dashboard','BackendController@dashboard')->name('dashboard'); 
     // return view('welcome');
@@ -36,6 +35,8 @@ Route::resource('categories','CategoryController');
 
 Route::resource('subcategories','SubcategoryController');
 });
+Route::resource('orders','OrderController');
+
 // end backend
     
 
