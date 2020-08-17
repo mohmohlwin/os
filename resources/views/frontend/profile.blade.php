@@ -3,7 +3,11 @@
 @section('content')
 	<div class="col-lg-9">
 		<h2>Profile Page</h2>
-		<div class="card o-hidden border-0 shadow-lg my-5">
+    {{Auth::user()->name}} <br>
+    {{Auth::user()->email}}
+
+
+		{{-- <div class="card o-hidden border-0 shadow-lg my-5">
       <div class="card-body p-0">
         <!-- Nested Row within Card Body -->
         <div class="row">
@@ -22,6 +26,6 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> --}}
 	</div>
 @endsection

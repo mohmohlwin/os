@@ -22,18 +22,15 @@ Items Manage
 14-08-2020
 ----------
 
+Frontend
+
 -filter item page (data binding)
 -profile page (link/ retrieve)
--auth (multi role)
 
 Backend
-	-Order Retrieve
-	-(backend/orders)
-	-create view (index.blade.php)
-	-show table (order list)
-	-OrderController /index
+	-Order Detail
+	
 
-	-RUD (category, subcategory)
 
 
 

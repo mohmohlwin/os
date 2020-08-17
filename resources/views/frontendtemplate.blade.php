@@ -72,8 +72,8 @@
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               {{ __('Logout') }}
-              
-              <a class="dropdown-item" href="{{route('profilepage')}}">Profile</a>
+              </a>              
+              <a class="dropdown-item" href="{{route('profilepage')}}">Profile
               
               </a>
 
@@ -93,16 +93,7 @@
 
     <div class="row">
 
-      <div class="col-lg-3">
-
-        <h1 class="my-4">Shop Name</h1>
-        <div class="list-group">
-          <a href="{{route('itempage')}}" class="list-group-item">Category 1</a>
-          <a href="#" class="list-group-item">Category 2</a>
-          <a href="#" class="list-group-item">Category 3</a>
-        </div>
-
-      </div>
+     @yield('sidebar')
       <!-- /.col-lg-3 -->
 
       @yield('content')
