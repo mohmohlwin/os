@@ -72,9 +72,10 @@
               onclick="event.preventDefault();
               document.getElementById('logout-form').submit();">
               {{ __('Logout') }}
-            <a class="dropdown-item" href="{{route('profilepage')}}">Profile</a>
               
-            </a>
+              <a class="dropdown-item" href="{{route('profilepage')}}">Profile</a>
+              
+              </a>
 
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
               @csrf

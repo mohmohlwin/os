@@ -54,7 +54,7 @@
 
 </div>
       <!-- /.col-lg-9 -->
-@endsection()
+@endsection
 
 @section('script')
 <script type="text/javascript" src="{{asset('frontend/js/script.js')}}">
